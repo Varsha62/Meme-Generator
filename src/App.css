@@ -27,8 +27,9 @@ body {
 .form {
   padding: 2rem 3rem;
   display: grid;
-  grid-template: minmax(40px, 8vh) minmax(30px, 8vh) 1fr/1fr 1fr;
-  gap: 2rem;
+  grid-template: minmax(40px, 8vh) minmax(30px, 8vh) 1fr/ 1fr 1fr;
+  gap:2rem;
+
 
 }
 
@@ -62,8 +63,8 @@ body {
   border-radius: 5px;
   text-indent: 10px;
   transition: 0.1s all linear;
+  
 }
-
 .form .input:focus {
   border: none;
   outline: none;
@@ -139,12 +140,13 @@ body {
   border-radius: 10px;
   border: 4px solid;
   border-color: #c779d0;
+  /* background-image: linear-gradient(315deg, #4bc0c8 0%, #c779d0 40%, #feac5e 74%); */
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
-.react-slider{
+.react-slider {
   /* -webkit-appearance: none; */
   width: 100%;
   height: 15px;
@@ -201,6 +203,32 @@ body {
   width: 10px;
   filter: invert(1);
 }
+
+@media screen and (max-width: 800px) {
+  .sys-container {
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+  }
+
+  .slider-container {
+    grid-column: 1/-1;
+    width: 100%;
+    grid-row: 2/3;
+    padding: 1em 1.8em;
+  }
+
+  #download-btn {
+    height: 30px;
+    width: 100%;
+  }
+  .meme-img-container {
+    grid-column: 1/-1;
+    width: 100%;
+    height: auto;
+    grid-row: 1/2;
+  }
+}
+
 @media screen and (max-width: 450px) {
   html {
     font-size: 12px;

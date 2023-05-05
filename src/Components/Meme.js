@@ -17,7 +17,7 @@ export default function Meme() {
         left: 0,
         right: 0,
         bottom: 0,
-        fontSize: 0
+        fontSize: 16
     })
 
     const labels = ["Top: ", "Left: ", "Right: ", "Bottom: ", "Font-Size: "]
@@ -122,6 +122,16 @@ export default function Meme() {
                         onChange={handleSliderChange}
                     />
 
+                            {/* right */}
+
+                    <label htmlFor='right'>{labels[2]}</label>
+                    <input className='right range-slider'
+                        type='range'
+                        name='right'
+                        value={slider.right}
+                        onChange={handleSliderChange}
+                    />
+
                     {/* bottom */}
 
                     <label htmlFor='bottom'>{labels[3]}</label>
@@ -132,15 +142,7 @@ export default function Meme() {
                         onChange={handleSliderChange}
                     />
 
-                    {/* right */}
-
-                    <label htmlFor='right'>{labels[2]}</label>
-                    <input className='right range-slider'
-                        type='range'
-                        name='right'
-                        value={slider.right}
-                        onChange={handleSliderChange}
-                    />
+            
                     {/* fontSize */}
                     <label htmlFor='font-size'>{labels[4]}</label>
                     <input className='font-size range-slider'
