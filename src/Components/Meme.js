@@ -84,10 +84,10 @@ export default function Meme() {
             <div className='form'>
                 <input type='text' className='input input-1' placeholder='Enter top line' name='topText' value={meme.topText}
                     onChange={handleChange} />
-            </div>
+            {/* </div> */}
 
             {/* input text 2nd ke liye */}
-            <div className='form'>
+            {/* <div className='form'> */}
                 <input type='text' className='input input-2' placeholder='Enter bottom line' name='bottomText' value={meme.bottomText}
                     onChange={handleChange} />
 
